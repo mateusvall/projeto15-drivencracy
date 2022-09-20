@@ -9,3 +9,9 @@ export const pollSchema = Joi.object({
     expireAt: Joi.date().format('YYYY-MM-DD HH:mm')
 
 });
+
+export const choiceSchema = Joi.object({
+    title: Joi.string().required(),
+    pollId: Joi.string()
+
+})
